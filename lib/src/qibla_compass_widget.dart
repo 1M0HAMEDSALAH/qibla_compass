@@ -111,7 +111,7 @@ class _QiblaCompassWidgetState extends State<QiblaCompassWidget>
               ),
               boxShadow: [
                 BoxShadow(
-                  color: widget.theme.gold.withOpacity(isAligned ? 0.5 : 0.2),
+                  color: widget.theme.gold.withValues(alpha: isAligned ? 0.5 : 0.2),
                   blurRadius: isAligned ? 40 : 20,
                   spreadRadius: isAligned ? 8 : 2,
                 ),
@@ -150,7 +150,7 @@ class _QiblaCompassWidgetState extends State<QiblaCompassWidget>
               color: isAligned ? widget.theme.gold : Colors.white38,
               boxShadow: [
                 BoxShadow(
-                  color: widget.theme.gold.withOpacity(0.6),
+                  color: widget.theme.gold.withValues(alpha: 0.6),
                   blurRadius: 8,
                 ),
               ],
@@ -193,12 +193,12 @@ class _QiblaNeedle extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
           decoration: BoxDecoration(
             color: isAligned
-                ? theme.gold.withOpacity(0.18)
+                ? theme.gold.withValues(alpha: 0.18)
                 : Colors.white.withValues(alpha: 0.08),
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
               color:
-                  isAligned ? theme.gold.withOpacity(0.5) : Colors.transparent,
+                  isAligned ? theme.gold.withValues(alpha: 0.5) : Colors.transparent,
               width: 1,
             ),
           ),
@@ -222,7 +222,7 @@ class _QiblaNeedle extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              colors: [color, color.withOpacity(0)],
+              colors: [color, color.withValues(alpha: 0)],
             ),
           ),
         ),
@@ -297,7 +297,7 @@ class _KaabaPainter extends CustomPainter {
         Rect.fromLTWH(w * 0.15, h * 0.3, w * 0.7, h * 0.6),
         paint
           ..style = PaintingStyle.fill
-          ..color = color.withOpacity(0.15));
+          ..color = color.withValues(alpha: 0.15));
     canvas.drawRect(
         Rect.fromLTWH(w * 0.15, h * 0.3, w * 0.7, h * 0.6),
         paint
@@ -315,7 +315,7 @@ class _KaabaPainter extends CustomPainter {
         topPath,
         paint
           ..style = PaintingStyle.fill
-          ..color = color.withOpacity(0.1));
+          ..color = color.withValues(alpha: 0.1));
     canvas.drawPath(
         topPath,
         paint
@@ -327,7 +327,7 @@ class _KaabaPainter extends CustomPainter {
         Rect.fromLTWH(w * 0.38, h * 0.55, w * 0.24, h * 0.35),
         paint
           ..style = PaintingStyle.fill
-          ..color = color.withOpacity(0.3));
+          ..color = color.withValues(alpha: 0.3));
     canvas.drawRect(
         Rect.fromLTWH(w * 0.38, h * 0.55, w * 0.24, h * 0.35),
         paint
@@ -341,7 +341,7 @@ class _KaabaPainter extends CustomPainter {
       Offset(w * 0.85, h * 0.47),
       paint
         ..strokeWidth = 1.5
-        ..color = color.withOpacity(0.6),
+        ..color = color.withValues(alpha: 0.6),
     );
   }
 

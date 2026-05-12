@@ -1,11 +1,8 @@
 name: qibla_compass
-description: >
-  A beautifully designed Flutter Qibla compass widget that uses the device's
-  GPS and compass sensor to accurately determine the direction of the Kaaba
-  in Mecca. Supports both Arabic and English, with smooth animations and
-  real-time alignment feedback.
+description: A Flutter Qibla compass using GPS and compass sensor. Bilingual Arabic/English UI, smooth animations, and real-time alignment feedback.
+
 version: 1.0.0
-homepage: https://github.com/yourname/qibla_compass
+homepage: https://github.com/1M0HAMEDSALAH/qibla_compass
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -15,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_compass: ^0.8.0
-  geolocator: ^12.0.0
+  geolocator: ^14.0.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0

@@ -492,8 +492,8 @@ class _AlignmentBadge extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
       decoration: BoxDecoration(
         color: isAligned
-            ? theme.gold.withOpacity(0.15)
-            : Colors.white.withOpacity(0.07),
+            ? theme.gold.withValues(alpha: 0.15)
+            : Colors.white.withValues(alpha: 0.07),
         borderRadius: BorderRadius.circular(28),
         border: Border.all(
           color: isAligned ? theme.gold : Colors.white30,
@@ -502,7 +502,7 @@ class _AlignmentBadge extends StatelessWidget {
         boxShadow: isAligned
             ? [
                 BoxShadow(
-                  color: theme.gold.withOpacity(0.25),
+                  color: theme.gold.withValues(alpha: 0.25),
                   blurRadius: 16,
                 )
               ]
@@ -546,9 +546,9 @@ class _CalibrationHint extends StatelessWidget {
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: Colors.amber.withOpacity(0.07),
+        color: Colors.amber.withValues(alpha: 0.07),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.amber.withOpacity(0.25)),
+        border: Border.all(color: Colors.amber.withValues(alpha: 0.25)),
       ),
       child: Row(
         children: [
