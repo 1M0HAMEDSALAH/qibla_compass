@@ -1,7 +1,7 @@
 name: qibla_compass
 description: A Flutter Qibla compass using GPS and compass sensor. Bilingual Arabic/English UI, smooth animations, and real-time alignment feedback.
 
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/1M0HAMEDSALAH/qibla_compass
 
 environment:
